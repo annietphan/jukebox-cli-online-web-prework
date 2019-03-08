@@ -65,14 +65,6 @@ def run(songs)
     else
       puts "Invalid input, please try again:"
       user_response = gets.chomp
-  if user_response == "list"
-    list
-  elsif user_response == "play"
-    play
-  elsif user_response == "help"
-    help
-  elsif user_response == "exit"
-    exit_jukebox
-    break
+    end
   end
 end
