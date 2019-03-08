@@ -59,6 +59,7 @@ def run(songs)
     when "play"
       play(songs)
       puts "Please enter a command:"
+      user_response = gets.chomp
   if user_response == "list"
     list
   elsif user_response == "play"
