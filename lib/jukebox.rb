@@ -59,11 +59,10 @@ def run(songs)
       play(songs)
       puts "Please enter a command:"
       user_response = gets.chomp
-    when "exit"
-      exit_jukebox
     else
       puts "Invalid input, please try again:"
       user_response = gets.chomp
     end
   end
+  exit_jukebox
 end
