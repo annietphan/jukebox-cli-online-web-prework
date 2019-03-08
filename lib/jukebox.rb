@@ -23,15 +23,14 @@ def play(songs)
   song_choice = gets.chomp
   if (1..9).to_a.include?(song_choice.to_i)
     puts "Playing #{songs[song_choice.to_i - 1]}"
-  songs.each_with_index do |song, i|
-    if song_choice.to_i == i
-      puts "Playing #{songs[i-1]}"
-    elsif songs.include?(song_choice)
-      puts "Playing #{song_choice}"
-    else puts "Invalid input, please try again"
-    end
+  elsif songs.include?(song_choice)
+    puts "Playing #{song_choice}"
+  else
+    puts "Invalid input, please try again"
   end
 end
+
+
 
 def list(songs)
   songs.each_with_index do |song, i|
