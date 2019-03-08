@@ -50,4 +50,6 @@ def run(songs)
     list
   elsif user_response == "play"
     play
+  elsif user_response == "help"
+    help
 end
